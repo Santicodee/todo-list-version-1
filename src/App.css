@@ -56,7 +56,12 @@ h1 {
   align-items: center;
   font-size: 2rem;
   position: relative;
-  text-align: center;
+  text-align: justify;
+  white-space: pre-wrap;
+  overflow: hidden;
+  line-height: 0.8em;
+  padding: 2em;
+
 }
 .close {
   position: absolute;
@@ -107,12 +112,11 @@ h1 {
     grid-template-rows: 10em 10em 10em 10em 10em;
     height: 70vh;
   }
-   .add-task {
+  .add-task {
     width: 9em;
   }
 }
 @media (max-width: 320px) {
- 
   h1 {
     font-size: 1.5rem;
   }
