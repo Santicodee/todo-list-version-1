@@ -77,6 +77,8 @@ h1 {
 
 .done {
   background-color: greenyellow;
+  text-decoration: line-through;
+  transition-duration: 0.5s;
 }
 
 @media (max-width: 768px) {
@@ -110,8 +112,7 @@ h1 {
   .add-task {
     width: 9em;
   }
-  h1{
+  h1 {
     font-size: 1.5rem;
   }
-  
 }
