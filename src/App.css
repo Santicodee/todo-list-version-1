@@ -38,6 +38,7 @@ h1 {
   background-color: #eeeeee;
   cursor: pointer;
   margin-left: 1em;
+  font-family: "Indie Flower", cursive;
 }
 
 .main-list {
@@ -48,7 +49,7 @@ h1 {
   gap: 1em;
 }
 .list {
-  background-color: #eeeeee;
+  background-color: #ffff8f;
   border-radius: 2em;
   display: flex;
   justify-content: center;
@@ -64,4 +65,53 @@ h1 {
   background-color: transparent;
   border-style: none;
   cursor: pointer;
+}
+.check {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.done {
+  background-color: greenyellow;
+}
+
+@media (max-width: 768px) {
+  .main-list {
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows: 10em 10em 10em;
+    padding: 2em;
+  }
+}
+
+@media (max-width: 426px) {
+  .main-list {
+    grid-template-columns: 13em 13em;
+  }
+  .list {
+    font-size: 1.5rem;
+  }
+  .add-task {
+    width: 15em;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-list {
+    grid-template-columns: 16em;
+    grid-template-rows: 10em 10em 10em 10em 10em;
+    height: 70vh;
+  }
+}
+@media (max-width: 320px) {
+  .add-task {
+    width: 9em;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  
 }

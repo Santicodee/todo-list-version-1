@@ -1,13 +1,19 @@
-const TaskList = ({ newTask, deleteTask }) => {
+const TaskList = ({ newTask, deleteTask, toggleDone }) => {
   return (
     <>
       <ul className="main-list">
         {newTask.map((item) => (
           <li
-            className="list"
+            className={item.done ? "list done" : "list"}
             key={item.id}
             style={item.done ? { textDecoration: "line-through" } : {}}
           >
+            <input
+              type="checkbox"
+              className="check"
+              value={item.done}
+              onChange={() => toggleDone(item.id)}
+            />
             {item.task}
             <button onClick={() => deleteTask(item.id)} className="close">
               ❌

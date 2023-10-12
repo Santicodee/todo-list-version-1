@@ -20,6 +20,13 @@ function App() {
   function deleteTask(id) {
     setNewTask((newitems) => newitems.filter((item) => item.id !== id));
   }
+  function toggleDone(id) {
+    setNewTask((newitem) =>
+      newitem.map((item) =>
+        item.id === id ? { ...item, done: !item.done } : item
+      )
+    );
+  }
 
   return (
     <>
@@ -29,6 +36,7 @@ function App() {
         initialItems={initialItems}
         newTask={newTask}
         deleteTask={deleteTask}
+        toggleDone={toggleDone}
       />
     </>
   );
