@@ -91,7 +91,7 @@ h1 {
 
 @media (max-width: 426px) {
   .main-list {
-    grid-template-columns: 13em 13em;
+    grid-template-columns: 11em 11em;
   }
   .list {
     font-size: 1.5rem;
@@ -107,11 +107,12 @@ h1 {
     grid-template-rows: 10em 10em 10em 10em 10em;
     height: 70vh;
   }
-}
-@media (max-width: 320px) {
-  .add-task {
+   .add-task {
     width: 9em;
   }
+}
+@media (max-width: 320px) {
+ 
   h1 {
     font-size: 1.5rem;
   }
