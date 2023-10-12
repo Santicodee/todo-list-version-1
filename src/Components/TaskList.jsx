@@ -3,11 +3,7 @@ const TaskList = ({ newTask, deleteTask, toggleDone }) => {
     <>
       <ul className="main-list">
         {newTask.map((item) => (
-          <li
-            className={item.done ? "list done" : "list"}
-            key={item.id}
-            style={item.done ? { textDecoration: "line-through" } : {}}
-          >
+          <li className={item.done ? "list done" : "list"} key={item.id}>
             <input
               type="checkbox"
               className="check"
