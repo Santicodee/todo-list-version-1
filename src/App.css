@@ -1,38 +1,67 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+  font-family: "Indie Flower", cursive;
+}
+h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+.simple {
+  color: rgb(189, 189, 95);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.add-task {
+  height: 3em;
+  width: 20em;
+  border-radius: 1em;
+  padding-left: 1em;
+  outline: none;
+  border-style: dashed;
+  background-color: #eeeeee;
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+.add {
+  height: 4em;
+  width: 7em;
+  border-radius: 1em;
+  border-style: none;
+  background-color: #eeeeee;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.main-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 20em 20em 20em;
+  grid-template-rows: 10em 10em 10em;
+  gap: 1em;
+}
+.list {
+  background-color: #eeeeee;
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
 }
